@@ -3,7 +3,7 @@
 * {
   box-sizing: border-box;
 }
-
+/* 
 body {
   font-family: 'Roboto', sans-serif;
   display: flex;
@@ -55,4 +55,4 @@ body {
 
 .highcharts-data-table tr:hover {
     background: #f1f7ff;
-}
+} */
