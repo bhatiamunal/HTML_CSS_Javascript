@@ -202,7 +202,7 @@ Highcharts.chart('container', {
             name: 'Safari',
             y: 2.63
         }, {
-            name: 'Internet Explorer',
+            name: 'Internet Explorer', 
             y: 1.53
         },  {
             name: 'Opera',
