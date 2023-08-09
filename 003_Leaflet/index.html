@@ -7,7 +7,7 @@
    </head>
    
    <body>
-      <div id = "map" style = "width:900px; height:580px"></div>
+      <div id = "map" style = "width:1800px; height:900px"></div>
       <script>
          // Creating map options
          var mapOptions = {
@@ -29,7 +29,17 @@
          var marker = L.marker([
         28.692320, 77.130730
         ]);
+        var latlngs = [
+         [ 28.6934000,77.1295000],
+         [28.4089,77.3178],
+         [28.6330,77.2194],
+         [ 28.4744000,77.5040000],
          
+         [28.4595,77.0266]
+        
+      ];
+      var polygon = L.polygon(latlngs, {color: 'red'});
+      polygon.addTo(map);
          // Adding marker to the map
          marker.addTo(map);
       </script>
