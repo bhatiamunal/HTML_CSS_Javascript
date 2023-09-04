@@ -2,6 +2,24 @@
   const ctx = document.getElementById('myChart');
   const ctx_bar = document.getElementById('myChart_bar');
   const ctx_pie = document.getElementById('myChart_pie');
+  const myChart_doughnut = document.getElementById('myChart_doughnut');
+  const data = {
+    labels: [
+      'Red',
+      'Blue',
+      'Yellow'
+    ],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [300, 50, 100],
+      backgroundColor: [
+        'rgb(255, 99, 132)',
+        'rgb(54, 162, 235)',
+        'rgb(255, 205, 86)'
+      ],
+      hoverOffset: 4
+    }]
+  };
   new Chart(ctx, {
     type: 'line',
     data: {
@@ -91,11 +109,16 @@
         'rgb(54, 162, 235)',
         'rgb(255, 205, 86)'
       ],
-      hoverOffset: 4
+      hoverOffset: 4,
     }]
   };
-  new Chart(ctx_pie, {
+  new Chart(myChart_doughnut, {
     type: 'doughnut',
-    data: data_pie,
+    data: data,
+  
+  });
+  new Chart(ctx_pie, {
+    type: 'pie',
+    data:data
   
   });
